@@ -53,7 +53,7 @@
 #ifdef IS_RAMPS_13
   #define SERVO0_PIN        7 // RAMPS_13 // Will conflict with BTN_EN2 on LCD_I2C_VIKI
 #else
-  #define SERVO0_PIN       11
+  #define SERVO0_PIN       19
 #endif
 #define SERVO1_PIN          6
 #define SERVO2_PIN          5
@@ -64,7 +64,7 @@
 #define X_ENABLE_PIN       38
 #define X_MIN_PIN           3
 #ifndef X_MAX_PIN
-  #define X_MAX_PIN         2
+  #define X_MAX_PIN         -1
 #endif
 
 #define Y_STEP_PIN         60
@@ -77,7 +77,7 @@
 #define Z_DIR_PIN          48
 #define Z_ENABLE_PIN       62
 #define Z_MIN_PIN          18
-#define Z_MAX_PIN          19
+#define Z_MAX_PIN          -1
 
 #define E0_STEP_PIN        26
 #define E0_DIR_PIN         28
